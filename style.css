@@ -1,0 +1,468 @@
+:root {
+    --color1: #e2a100;
+    --color2: #ffc82c;
+    --color3: #edd9ae;
+    --color4: #045e46;
+    --color5: #003a22;
+    --color6: #1e1e1e;
+    --color7: #e3e3e3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    z-index: -1;
+    background: url("assets/images/woman-shopping.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: none;
+    background-position: center;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.header {
+    position: fixed;
+    z-index: 100;
+    top: -125px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    transition: all .5s ease-in-out;
+}
+
+#navbar-btn {
+    position: absolute;
+    top: 120px;
+    left: 40vh;
+    border: none;
+    border-radius: 0 0 10px 10px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--color1);
+    color: var(--color5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    transition: all .2s ease-in-out;
+}
+
+#navbar-btn:hover {
+    background-color: var(--color2);
+}
+
+#navbar-btn i {
+    transition: all .5s ease-in-out;
+}
+
+.navbar {
+    width: 80%;
+    height: 100px;
+    background-color: var(--color1);
+    box-shadow: black 0 0 50px;
+    color: var(--color7);
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.navbar nav {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.navbar nav ul {
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+}
+
+.navbar nav ul li {
+    padding: 10px;
+    display: inline;
+    margin-left: 20px;
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar nav ul li:hover {
+    border-bottom: solid 2px var(--color4);
+    cursor: pointer;
+    color: var(--color5);
+    font-weight: 700;
+}
+
+#shopping-cart {
+    font-size: 48px;
+    color: var(--color5);
+    text-align: center;
+    margin-right: 40px;   
+    padding: 20px; 
+    transition: all 0.5s ease-in-out;
+}
+
+#shopping-cart:hover {
+    cursor: pointer;
+    color: var(--color4);
+}
+
+.section {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infos {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.left-info {
+    width: 50%;
+    padding: 15px;
+    margin: 0;
+}
+
+.tagline {
+    color: var(--color5);
+    font-size: 48px;
+}
+
+.tagline span {
+    color: var(--color1);
+    font-weight: 900;
+}
+
+.tagline p {
+    color: var(--color6);
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.left-info a {
+    margin: 10px 0 0 0;
+    text-decoration: none;
+    font-size: 16px;
+    height: 50px;
+    width: 125px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--color5);
+    background-color: var(--color3);
+    border: none;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+}
+
+.left-info a:hover {
+    background-color: var(--color2);
+}
+
+.svgs {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.svg-layer {
+    position: relative;
+    bottom: -10px;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.svgs .content {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color3);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.content h1 {
+    margin: 0 0 30px 0;
+    color: var(--color6);
+    text-align: center;
+    font-size: 48px;
+}
+
+.content h1 span {
+    color: var(--color4);
+}
+
+#products-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 50%;
+    height: auto;
+}
+
+.slide-image {
+    display: none;
+}
+
+.slide-image img {
+    border-radius: 10px;  
+    box-shadow: black 0 0 50px;
+}
+
+.slide-image .overlay {
+    position: absolute;
+    inset: 0 0 6px 0;
+    border-radius: 10px;
+    background: linear-gradient(25deg, #1e1e1e55, #045e4655);
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: var(--color7);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.5s ease-in-out;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    transform: translate(0, -50%);
+}
+
+.prev:hover, .next:hover {
+    background-color: var(--color5);
+}
+
+.next {
+    border-radius: 3px 0 0 3px;
+    right: 0;
+}
+
+.dot-container {
+    width: auto;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: var(--color5);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.active-dot, .dot:hover {
+    background-color: var(--color4);
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+   from {opacity: .4}
+   to {opacity: 1}
+}
+
+.text-container {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.slide-image .text-container h4 {
+    color: var(--color7);
+    font-size: 15px;
+    padding: 8px 12px;
+    width: 100%;
+    text-align: center;
+}
+
+.slide-image .text-container p {
+    color: var(--color7);
+    font-size: 12px;
+    padding: 4px 12px;
+    text-align: center;
+}
+
+.svg-layer2 {
+    z-index: 1;
+    position: relative;
+    bottom: -325px;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.svgs .content2 {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.form {
+    margin: 200px 0 0 0;
+    z-index: 1;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form h1 {
+    color: var(--color6);
+    font-size: 48px;
+}
+
+.form hr {
+    width: 30%;
+    height: 5px;
+    background-color: var(--color4);
+    outline: none;
+    border: none;
+}
+
+.form h1 span {
+    color: var(--color4);
+}
+
+.form input, .form textarea {
+    background-color: var(--color3);
+    color: var(--color6);
+    margin: 20px 0 10px 0;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: solid 2px var(--color4);
+    outline: none;
+    border-radius: 10px;
+    transition: all .2s ease-in;
+}
+
+.form input:focus, .form textarea:focus, .form input:hover, .form textarea:hover {
+    box-shadow: var(--color4) 0 0 10px;
+}
+
+.form input {
+    height: 50px;
+    width: 80%;
+}
+
+.form textarea {
+    height: 100px;
+    max-height: 100px;
+    width: 80%;
+    overflow: scroll;
+    scrollbar-width: none;
+    resize: none;
+}
+
+#form-submit {
+    width: 30%;
+    border: none;
+    background-color: var(--color5);
+    color: var(--color7);
+}
+
+#form-submit:hover {
+    cursor: pointer;
+    background-color: var(--color4);
+}
+
+.form-image {
+    max-height: 100%;
+    width: 35%;
+}
+
+.form-image img {
+    width: 100%;
+}
+
+#footer {
+    height: 70%;
+}
+
+.svg-layer3 {
+    position: relative;
+    bottom: -325px;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.svgs .content3 {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color5);
+}

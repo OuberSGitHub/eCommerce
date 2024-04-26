@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Commerce</title>
+
+    <!-- Including icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Important Files -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <div class="container">
+
+        <!-- Header section -->
+        <div class="header">
+            <div class="navbar" id="navbar">
+                <!-- Logo Place -->
+                <div class="logo">
+                    <!-- Place here the logo -->
+                </div>
+    
+                <!-- Nav bar place -->
+                <nav>
+                    <ul>
+                        <li>HOME</li>
+                        <li>CATEGORIES</li>
+                        <li>CONTACT</li>
+                        <li>ABOUT</li>
+                    </ul>
+                    <i class="fa fa-shopping-cart" id="shopping-cart"></i>
+                </nav>
+    
+            </div>
+
+            <div id="navbar-btn">
+                <i class="fa fa-chevron-down"></i>
+            </div>
+        </div>
+
+        <!-- Tagline section -->
+        <div class="section">
+            <div class="infos">
+                <div class="left-info">
+                    <h1 class="tagline">A few <span><em>clicks</em></span><br> is all it takes.</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Possimus, harum.</p>
+                    <a href="">Discover <i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Our poducts section -->
+        <div class="section">
+            <div class="svgs">
+                <div class="svg-layer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffc82c" fill-opacity="1" d="M0,320L40,282.7C80,245,160,171,240,165.3C320,160,400,224,480,213.3C560,203,640,117,720,90.7C800,64,880,96,960,133.3C1040,171,1120,213,1200,213.3C1280,213,1360,171,1400,149.3L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path><path fill="#e2a100" fill-opacity="1" d="M0,192L60,165.3C120,139,240,85,360,96C480,107,600,181,720,218.7C840,256,960,256,1080,218.7C1200,181,1320,107,1380,69.3L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path><path fill="#edd9ae" fill-opacity="1" d="M0,224L26.7,208C53.3,192,107,160,160,160C213.3,160,267,192,320,213.3C373.3,235,427,245,480,256C533.3,267,587,277,640,250.7C693.3,224,747,160,800,117.3C853.3,75,907,53,960,80C1013.3,107,1067,181,1120,218.7C1173.3,256,1227,256,1280,245.3C1333.3,235,1387,213,1413,202.7L1440,192L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
+                </div>
+                <div class="content"  id="products-container">
+                    <!-- First content -->
+                    <h1><span>Our</span> Products</h1>
+                    <div class="slideshow-container">
+                        <div class="slide-image fade">
+                            <img src="assets/images/veggies.jpg" alt="" style="width: 100%;">
+                            <div class="overlay"></div>
+                            <div class="text-container">
+                                <h4>Lorem ipsum dolor sit amet.</h4>
+                                <p>1 / 3</p>
+                            </div>
+                        </div>
+
+                        <div class="slide-image fade">
+                            <img src="assets/images/clothes.jpg" alt="" style="width: 100%;">
+                            <div class="overlay"></div>
+                            <div class="text-container">
+                                <h4>Lorem ipsum dolor sit amet.</h4>
+                                <p>2 / 3</p>
+                            </div>
+                        </div>
+
+                        <div class="slide-image fade">
+                            <img src="assets/images/services.jpg" alt="" style="width: 100%;">
+                            <div class="overlay"></div>
+                            <div class="text-container">
+                                <h4>Lorem ipsum dolor sit amet.</h4>
+                                <p>3 / 3</p>
+                            </div>
+                        </div>
+
+                        <a class="prev fa fa-chevron-left"></a>
+                        <a class="next fa fa-chevron-right"></a>
+
+                        <div style="text-align:center" class="dot-container">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact section -->
+        <div class="section">
+            <div class="svgs">
+                <div class="svg-layer2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#edd9ae" fill-opacity="1" d="M0,128L48,144C96,160,192,192,288,186.7C384,181,480,139,576,112C672,85,768,75,864,80C960,85,1056,107,1152,117.3C1248,128,1344,128,1392,128L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+                </div>
+
+                <div class="content2">
+                    <!-- Second content -->
+                    <div class="form">
+                        <form action="">
+                            <h1>Keep <span>In</span> Touch</h1>
+                            <hr>
+                            <input type="text" name="name" id="name" placeholder="Write your name" />
+                            <input type="email" name="email" id="email" placeholder="Write your email" />
+                            <textarea name="message" id="message" placeholder="What's your message to the owner?"></textarea>
+                            <input type="submit" value="Done" id="form-submit" />
+                        </form>
+                    </div>
+                    <div class="form-image">
+                        <img src="assets/images/form-image.png">
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer section -->
+        <div class="section" id="footer">
+            <div class="svgs">
+                <div class="svg-layer3">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e2a100" fill-opacity="1" d="M0,192L48,181.3C96,171,192,149,288,154.7C384,160,480,192,576,197.3C672,203,768,181,864,154.7C960,128,1056,96,1152,106.7C1248,117,1344,171,1392,197.3L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+                </div>
+
+                <div class="content3">
+                    <!-- Third content -->
+                    <h1>About</h1>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
