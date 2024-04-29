@@ -731,6 +731,10 @@ footer hr {
         display: none;
     }
 
+    .text-container {
+        top: 60%;
+    }
+
     .text-container h4 {
         font-size: 14px;
     }
