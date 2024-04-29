@@ -1,15 +1,30 @@
 // Navbar animation
 const navbarBtn = document.querySelector("#navbar-btn");
+const navbarBtn2 = document.querySelector("#responsive-navbar-btn");
+const header = document.querySelector(".header");
 
 navbarBtn.addEventListener("click", () =>{
-    if (navbarBtn.parentNode.style.top === "-125px"){
-        navbarBtn.parentNode.style.top = "0";
-        navbarBtn.children[0].style.transform = "rotate(180deg)";
-    } else {
-        navbarBtn.parentNode.style.top = "-125px";
-        navbarBtn.children[0].style.transform = "rotate(0)";
-    }
+  if (navbarBtn.parentNode.style.top === "-125px"){
+      navbarBtn.parentNode.style.top = "0";
+      navbarBtn.children[0].style.transform = "rotate(180deg)";
+  } else {
+      navbarBtn.parentNode.style.top = "-125px";
+      navbarBtn.children[0].style.transform = "rotate(0)";
+  }
 });
+
+navbarBtn2.addEventListener("click", () =>{
+  if (header.style.left === "100%"){
+      header.style.left = "0";
+      navbarBtn2.children[0].classList.remove("fa-bars");
+      navbarBtn2.children[0].classList.add("fa-chevron-right");
+  } else {
+      header.style.left = "100%";
+      navbarBtn2.children[0].classList.add("fa-bars");
+      navbarBtn2.children[0].classList.remove("fa-chevron-right");
+  }
+});
+
 
 // Slideshow animation
 let slideIndex = 1;
